@@ -16,3 +16,29 @@ Escopo:
 Funcionalidades a serem implementadas futuramente:
 
   -Comparação de imagens.
+
+# Prova de conceito
+
+## Requisitos
+
+* Python 3.6+ com [Pipenv](https://pipenv.readthedocs.io/).
+* Chaves de acesso à [API do Twitter](https://developer.twitter.com/apps)
+
+## Configurações
+
+Copie o arquivo `.env.sample` como `.env` e inclua ali as chaves de acesso à API do Twitter.
+
+## Uso
+
+```python
+>>> from kibe import Tweet
+>>> tweet = Tweet(1194269206419775488)
+>>> tweet.is_kibe
+True
+>>> print(tweet)
+01. https://twitter.com/cuducos/status/1212728475389485056
+02. https://twitter.com/cuducos/status/1212015005807370240
+03. https://twitter.com/cuducos/status/1211646253790121985
+04. https://twitter.com/cuducos/status/1210562865708642306
+>>>
+```
